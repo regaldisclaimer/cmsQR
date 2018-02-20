@@ -12,14 +12,20 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 <html>
 	<head>
 		<meta charset="utf-8">
-		<!-- TODO: include theme -->
+		<link rel="stylesheet" href="node_modules/material-components-web/dist/material-components-web.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	</head>
 <body>
 
-	<!-- Down load cert PDF button -->
+	<button id="mainButton" class="mdc-button mdc-button--raised">
+		<i class="material-icons mdc-button__icon">download</i>
+		<!-- TODO: icon -->
+		임명장 PDF 다운로드
+	</button>
 
 	<!-- TODO::PDF generation/download. Print is less approrpriate for mobile -->
 	<script>
+		var mainButtonEl = document.querySelector("#mainButton");
 		var name = null;
 		var image = null;
 		var pending = false;
