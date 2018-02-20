@@ -1,0 +1,66 @@
+<!--
+Copyright (C) Valuace LLC
+All Rights Reserved
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+<!-- NB: use the format: index.html?9999999999999 -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- TODO: include theme -->
+	</head>
+<body>
+
+	<!-- Down load cert PDF button -->
+
+	<!-- TODO::PDF generation/download. Print is less approrpriate for mobile -->
+	<script>
+		var name = null;
+		var image = null;
+		var pending = false;
+
+		//fetch URL query
+		var id = "" + window.location.search.substring(1);
+
+		var idRegex = /^[0-9]{13}$/g;
+
+		var downloadPDF = function() {
+			//show loading
+
+			//check if data fetched
+			if (name && image) {
+
+			} else {
+				//set pending, which will run this function again upon data fetch
+				pending = true;
+			}
+			//
+
+			//disable button temporarily
+
+			//create PDF
+
+			//download
+		}
+
+		var showError = function(errorMessage) {
+			alert(errorMessage);
+		}
+
+		//validate
+		if (id.match(idRegex)) {
+			//make request
+			
+				//if pending, restart the PDF process.
+		} else {
+			showError("Invalid Address");
+		}
+
+	</script>
+</body>
+</html>
