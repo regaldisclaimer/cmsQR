@@ -13,14 +13,17 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 <html>
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="material-components-web.css">
+		<link rel="stylesheet" href="node_modules/material-components-web/dist/material-components-web.css">
 		<link rel="stylesheet" href="index.css">
 	</head>
 <body>
 
-	<a id="mainButton" class="mdc-button mdc-button--raised" onclick="buttonPressed()">
+	<p><a id="mainButton" class="mdc-button mdc-button--raised" onclick="buttonPressed()">
 		임명장 준비중...
-	</a>
+	</a></p>
+	<p><a id="emailButton" class="mdc-button mdc-button--raised">
+	  이메일 준비중...
+	</a></p>
 	<div id="certCard" class="mdc-card hidden">
 				<img id="certImage" src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Hwacha2.jpg"></img>
 				<div id="certText">
@@ -47,6 +50,6 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 	<!-- TODO::PDF generation/download. Print is less approrpriate for mobile -->
   <script src="jquery.js"></script>
 	<script src="qr.js"></script>
-	<script src="indexObf.js"></script>
+	<script src="7e1126d.js"></script>
 </body>
 </html>
