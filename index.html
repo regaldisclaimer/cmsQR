@@ -1,0 +1,52 @@
+<!--
+Copyright (C) Valuace LLC
+All Rights Reserved
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+<!-- NB: use the format: index.html?id=9999999999999 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="material-components-web.css">
+		<link rel="stylesheet" href="index.css">
+	</head>
+<body>
+
+	<a id="mainButton" class="mdc-button mdc-button--raised" onclick="buttonPressed()">
+		임명장 준비중...
+	</a>
+	<div id="certCard" class="mdc-card hidden">
+				<img id="certImage" src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Hwacha2.jpg"></img>
+				<div id="certText">
+					<p>
+						<b><span id="certName"></span></b> 은/는 수군체험을
+					</p>
+					<p>
+						성실히 임하였으므로
+					</p>
+					<p>
+						고려수군으로 임명한다
+					</p>
+				</div>
+
+				<div id="certSign">
+					<p>
+						영천군 수군통제사
+					</p>
+					<p>
+						아무개
+					</p>
+				</div>
+	</div>
+	<!-- TODO::PDF generation/download. Print is less approrpriate for mobile -->
+  <script src="jquery.js"></script>
+	<script src="qr.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>

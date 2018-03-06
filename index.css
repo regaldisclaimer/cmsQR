@@ -1,0 +1,40 @@
+html, body {
+  text-align: center;
+}
+
+#mainButton {
+  margin-top: 5vh;
+}
+
+#certCard {
+	height: 891px;
+	width: 630px;
+	margin: auto;
+	margin-top: 15vh;
+	text-align: center;
+}
+
+#certImage {
+	width: 150px;
+	margin-top: 100px;
+	margin-left: 100px;
+}
+
+#certText {
+	text-align: justify;
+	font-size: 24px;;
+	margin-top: 100px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+#certSign {
+	font-size: 16px;;
+	text-align: right;
+	margin-top: 100px;
+	margin-right: 100px;
+}
+
+.hidden {
+  display: none;
+}
